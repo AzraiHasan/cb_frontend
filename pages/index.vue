@@ -5,8 +5,8 @@
   <div class="min-h-screen flex items-center justify-center bg-gray-50">
     <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow">
       <div class="text-center">
-        <h2 class="text-3xl font-bold text-gray-900">Welcome back</h2>
-        <p class="mt-2 text-sm text-gray-600">Sign in to your account</p>
+        <h2 class="text-3xl font-bold text-gray-900">Welcome</h2>
+        <p class="mt-2 text-sm text-gray-600">Sign in to your bank</p>
       </div>
 
       <form @submit.prevent="handleLogin" class="mt-8 space-y-6">
@@ -30,7 +30,7 @@
           <UButton type="submit" block :loading="loading">
             Sign in
           </UButton>
-          <UButton type="submit" block to="auth/register">
+          <UButton class="mt-3" type="submit" variant="outline" block to="auth/register">
             Register
           </UButton>
         </div>

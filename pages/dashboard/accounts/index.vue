@@ -5,18 +5,18 @@
     <UCard v-if="isNewUser" class="bg-primary-50">
       <template #header>
         <div class="flex items-center justify-between">
-          <h3 class="text-lg font-medium">Welcome to Your Banking Dashboard</h3>
+          <h3 class="text-lg font-medium">Welcome to Your Core Banking Dashboard</h3>
           <UButton variant="ghost" icon="i-heroicons-x-mark" @click="dismissWelcome" />
         </div>
       </template>
 
       <p class="text-sm text-gray-600 mb-4">
-        Get started by opening your first account. Choose from our range of accounts designed to meet your banking
+        Get started by opening your first account. Choose from our core banking services designed to meet your banking
         needs.
       </p>
 
       <UButton @click="startAccountOpening">
-        Open Your First Account
+        Open an account
       </UButton>
     </UCard>
 
@@ -32,10 +32,10 @@
       <div v-if="accounts.length === 0" class="text-center py-12">
         <UIcon name="i-heroicons-bank-notes" class="h-12 w-12 mx-auto text-gray-400 mb-4" />
         <h3 class="text-lg font-medium text-gray-900 mb-2">
-          No Accounts Yet
+          No Services Yet
         </h3>
         <p class="text-sm text-gray-600 mb-4">
-          Start your banking journey by opening your first account
+          Start your digital core banking service by creating your first account
         </p>
         <UButton @click="startAccountOpening">
           Open an Account
@@ -121,14 +121,14 @@ const creating = ref(false)
 
 // Mock data - Replace with API calls
 const accounts = ref<Account[]>([
-  {
+  /* {
     id: '1',
     name: 'Basic Savings',
     accountNumber: '1234567890',
     balance: 1000.00,
     status: 'active',
     type: 'savings'
-  }
+  } */
 ])
 
 const accountTypes: AccountType[] = [
