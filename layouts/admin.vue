@@ -1,4 +1,4 @@
-<!-- layouts/auth.vue -->
+<!-- layouts/admin.vue -->
 
 <template>
   <div>
