@@ -1,1 +1,1 @@
-// middleware/admin.ts
+// middleware/auth.ts
